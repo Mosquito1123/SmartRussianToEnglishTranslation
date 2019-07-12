@@ -1,0 +1,531 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD152FACE42B1893F9E059E3 /* Pods_SmartRussianToEnglishTranslation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCF3C73DD856868345655FF5 /* Pods_SmartRussianToEnglishTranslation.framework */; };
+		F3CD7BD122D873AE009D0191 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD7BD022D873AE009D0191 /* AppDelegate.swift */; };
+		F3CD7BD322D873AE009D0191 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD7BD222D873AE009D0191 /* ViewController.swift */; };
+		F3CD7BD622D873AE009D0191 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3CD7BD422D873AE009D0191 /* Main.storyboard */; };
+		F3CD7BD822D873AF009D0191 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3CD7BD722D873AF009D0191 /* Assets.xcassets */; };
+		F3CD7BDB22D873AF009D0191 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3CD7BD922D873AF009D0191 /* LaunchScreen.storyboard */; };
+		F3CD7BE322D87B75009D0191 /* ChatMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD7BE222D87B75009D0191 /* ChatMessageCell.swift */; };
+		F3CD7BE522D87BBB009D0191 /* VoiseRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD7BE422D87BBB009D0191 /* VoiseRecognizer.swift */; };
+		F3CD7BE722D87C47009D0191 /* YandexClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD7BE622D87C47009D0191 /* YandexClient.swift */; };
+		F3CD7BE922D87E01009D0191 /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3CD7BE822D87E01009D0191 /* Keys.plist */; };
+		F3CD7BEB22D87E4B009D0191 /* BottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD7BEA22D87E4B009D0191 /* BottomView.swift */; };
+		F3CD7C0322D8E304009D0191 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = F3CD7BF422D8E304009D0191 /* GTMBase64.m */; };
+		F3CD7C0422D8E304009D0191 /* SecurityUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F3CD7BF522D8E304009D0191 /* SecurityUtil.m */; };
+		F3CD7C0522D8E304009D0191 /* NSData+AES.m in Sources */ = {isa = PBXBuildFile; fileRef = F3CD7BF622D8E304009D0191 /* NSData+AES.m */; };
+		F3CD7C0622D8E304009D0191 /* BANetManagerCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F3CD7BFA22D8E304009D0191 /* BANetManagerCache.m */; };
+		F3CD7C0722D8E304009D0191 /* BANetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F3CD7BFB22D8E304009D0191 /* BANetManager.m */; };
+		F3CD7C0822D8E304009D0191 /* UIImage+CompressImage.m in Sources */ = {isa = PBXBuildFile; fileRef = F3CD7BFC22D8E304009D0191 /* UIImage+CompressImage.m */; };
+		F3CD7C0922D8E304009D0191 /* BADataEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = F3CD7BFE22D8E304009D0191 /* BADataEntity.m */; };
+		F3CD7C0B22D8F23F009D0191 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD7C0A22D8F23F009D0191 /* AboutViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		013DFB02139CF4F559DA0E83 /* Pods-SmartRussianToEnglishTranslation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartRussianToEnglishTranslation.release.xcconfig"; path = "Target Support Files/Pods-SmartRussianToEnglishTranslation/Pods-SmartRussianToEnglishTranslation.release.xcconfig"; sourceTree = "<group>"; };
+		CCF3C73DD856868345655FF5 /* Pods_SmartRussianToEnglishTranslation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartRussianToEnglishTranslation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3CD7BCD22D873AE009D0191 /* SmartRussianToEnglishTranslation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartRussianToEnglishTranslation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3CD7BD022D873AE009D0191 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F3CD7BD222D873AE009D0191 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F3CD7BD522D873AE009D0191 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F3CD7BD722D873AF009D0191 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F3CD7BDA22D873AF009D0191 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F3CD7BDC22D873AF009D0191 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3CD7BE222D87B75009D0191 /* ChatMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageCell.swift; sourceTree = "<group>"; };
+		F3CD7BE422D87BBB009D0191 /* VoiseRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiseRecognizer.swift; sourceTree = "<group>"; };
+		F3CD7BE622D87C47009D0191 /* YandexClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YandexClient.swift; sourceTree = "<group>"; };
+		F3CD7BE822D87E01009D0191 /* Keys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
+		F3CD7BEA22D87E4B009D0191 /* BottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomView.swift; sourceTree = "<group>"; };
+		F3CD7BED22D88A3D009D0191 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		F3CD7BEE22D8E07B009D0191 /* SmartRussianToEnglishTranslation.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SmartRussianToEnglishTranslation.entitlements; sourceTree = "<group>"; };
+		F3CD7BF022D8E304009D0191 /* NSData+AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AES.h"; sourceTree = "<group>"; };
+		F3CD7BF222D8E304009D0191 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		F3CD7BF322D8E304009D0191 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		F3CD7BF422D8E304009D0191 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		F3CD7BF522D8E304009D0191 /* SecurityUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecurityUtil.m; sourceTree = "<group>"; };
+		F3CD7BF622D8E304009D0191 /* NSData+AES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AES.m"; sourceTree = "<group>"; };
+		F3CD7BF722D8E304009D0191 /* SecurityUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecurityUtil.h; sourceTree = "<group>"; };
+		F3CD7BF922D8E304009D0191 /* BADataEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BADataEntity.h; sourceTree = "<group>"; };
+		F3CD7BFA22D8E304009D0191 /* BANetManagerCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BANetManagerCache.m; sourceTree = "<group>"; };
+		F3CD7BFB22D8E304009D0191 /* BANetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BANetManager.m; sourceTree = "<group>"; };
+		F3CD7BFC22D8E304009D0191 /* UIImage+CompressImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CompressImage.m"; sourceTree = "<group>"; };
+		F3CD7BFD22D8E304009D0191 /* BANetManager_Version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BANetManager_Version.h; sourceTree = "<group>"; };
+		F3CD7BFE22D8E304009D0191 /* BADataEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BADataEntity.m; sourceTree = "<group>"; };
+		F3CD7BFF22D8E304009D0191 /* BANetManagerCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BANetManagerCache.h; sourceTree = "<group>"; };
+		F3CD7C0022D8E304009D0191 /* UIImage+CompressImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CompressImage.h"; sourceTree = "<group>"; };
+		F3CD7C0122D8E304009D0191 /* BANetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BANetManager.h; sourceTree = "<group>"; };
+		F3CD7C0222D8E304009D0191 /* BANetManager_OC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BANetManager_OC.h; sourceTree = "<group>"; };
+		F3CD7C0A22D8F23F009D0191 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		FE75B4E2C9085724C665E0A5 /* Pods-SmartRussianToEnglishTranslation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartRussianToEnglishTranslation.debug.xcconfig"; path = "Target Support Files/Pods-SmartRussianToEnglishTranslation/Pods-SmartRussianToEnglishTranslation.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F3CD7BCA22D873AE009D0191 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD152FACE42B1893F9E059E3 /* Pods_SmartRussianToEnglishTranslation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24D746F5C331AAFFCDC2EBDB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE75B4E2C9085724C665E0A5 /* Pods-SmartRussianToEnglishTranslation.debug.xcconfig */,
+				013DFB02139CF4F559DA0E83 /* Pods-SmartRussianToEnglishTranslation.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		44A80208CD70A8219609612E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CCF3C73DD856868345655FF5 /* Pods_SmartRussianToEnglishTranslation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3CD7BC422D873AE009D0191 = {
+			isa = PBXGroup;
+			children = (
+				F3CD7BCF22D873AE009D0191 /* SmartRussianToEnglishTranslation */,
+				F3CD7BCE22D873AE009D0191 /* Products */,
+				24D746F5C331AAFFCDC2EBDB /* Pods */,
+				44A80208CD70A8219609612E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F3CD7BCE22D873AE009D0191 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3CD7BCD22D873AE009D0191 /* SmartRussianToEnglishTranslation.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3CD7BCF22D873AE009D0191 /* SmartRussianToEnglishTranslation */ = {
+			isa = PBXGroup;
+			children = (
+				F3CD7BEE22D8E07B009D0191 /* SmartRussianToEnglishTranslation.entitlements */,
+				F3CD7BEC22D88A2B009D0191 /* Lib */,
+				F3CD7BD022D873AE009D0191 /* AppDelegate.swift */,
+				F3CD7BD222D873AE009D0191 /* ViewController.swift */,
+				F3CD7BE222D87B75009D0191 /* ChatMessageCell.swift */,
+				F3CD7BD422D873AE009D0191 /* Main.storyboard */,
+				F3CD7BD722D873AF009D0191 /* Assets.xcassets */,
+				F3CD7BD922D873AF009D0191 /* LaunchScreen.storyboard */,
+				F3CD7BDC22D873AF009D0191 /* Info.plist */,
+				F3CD7BE422D87BBB009D0191 /* VoiseRecognizer.swift */,
+				F3CD7BEA22D87E4B009D0191 /* BottomView.swift */,
+				F3CD7BE622D87C47009D0191 /* YandexClient.swift */,
+				F3CD7BE822D87E01009D0191 /* Keys.plist */,
+				F3CD7BED22D88A3D009D0191 /* Header.h */,
+				F3CD7C0A22D8F23F009D0191 /* AboutViewController.swift */,
+			);
+			path = SmartRussianToEnglishTranslation;
+			sourceTree = "<group>";
+		};
+		F3CD7BEC22D88A2B009D0191 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				F3CD7BF822D8E304009D0191 /* BANetManager */,
+				F3CD7BEF22D8E304009D0191 /* Security */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		F3CD7BEF22D8E304009D0191 /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				F3CD7BF022D8E304009D0191 /* NSData+AES.h */,
+				F3CD7BF122D8E304009D0191 /* GTMBase64 */,
+				F3CD7BF522D8E304009D0191 /* SecurityUtil.m */,
+				F3CD7BF622D8E304009D0191 /* NSData+AES.m */,
+				F3CD7BF722D8E304009D0191 /* SecurityUtil.h */,
+			);
+			path = Security;
+			sourceTree = "<group>";
+		};
+		F3CD7BF122D8E304009D0191 /* GTMBase64 */ = {
+			isa = PBXGroup;
+			children = (
+				F3CD7BF222D8E304009D0191 /* GTMBase64.h */,
+				F3CD7BF322D8E304009D0191 /* GTMDefines.h */,
+				F3CD7BF422D8E304009D0191 /* GTMBase64.m */,
+			);
+			path = GTMBase64;
+			sourceTree = "<group>";
+		};
+		F3CD7BF822D8E304009D0191 /* BANetManager */ = {
+			isa = PBXGroup;
+			children = (
+				F3CD7BF922D8E304009D0191 /* BADataEntity.h */,
+				F3CD7BFA22D8E304009D0191 /* BANetManagerCache.m */,
+				F3CD7BFB22D8E304009D0191 /* BANetManager.m */,
+				F3CD7BFC22D8E304009D0191 /* UIImage+CompressImage.m */,
+				F3CD7BFD22D8E304009D0191 /* BANetManager_Version.h */,
+				F3CD7BFE22D8E304009D0191 /* BADataEntity.m */,
+				F3CD7BFF22D8E304009D0191 /* BANetManagerCache.h */,
+				F3CD7C0022D8E304009D0191 /* UIImage+CompressImage.h */,
+				F3CD7C0122D8E304009D0191 /* BANetManager.h */,
+				F3CD7C0222D8E304009D0191 /* BANetManager_OC.h */,
+			);
+			path = BANetManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F3CD7BCC22D873AE009D0191 /* SmartRussianToEnglishTranslation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3CD7BDF22D873AF009D0191 /* Build configuration list for PBXNativeTarget "SmartRussianToEnglishTranslation" */;
+			buildPhases = (
+				3C689C50DB77C097169CB9C4 /* [CP] Check Pods Manifest.lock */,
+				F3CD7BC922D873AE009D0191 /* Sources */,
+				F3CD7BCA22D873AE009D0191 /* Frameworks */,
+				F3CD7BCB22D873AE009D0191 /* Resources */,
+				1419C1D2DD8C0BBA9391ED9C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartRussianToEnglishTranslation;
+			productName = SmartRussianToEnglishTranslation;
+			productReference = F3CD7BCD22D873AE009D0191 /* SmartRussianToEnglishTranslation.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F3CD7BC522D873AE009D0191 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Cranberry;
+				TargetAttributes = {
+					F3CD7BCC22D873AE009D0191 = {
+						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.SafariKeychain = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = F3CD7BC822D873AE009D0191 /* Build configuration list for PBXProject "SmartRussianToEnglishTranslation" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F3CD7BC422D873AE009D0191;
+			productRefGroup = F3CD7BCE22D873AE009D0191 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F3CD7BCC22D873AE009D0191 /* SmartRussianToEnglishTranslation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F3CD7BCB22D873AE009D0191 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3CD7BE922D87E01009D0191 /* Keys.plist in Resources */,
+				F3CD7BDB22D873AF009D0191 /* LaunchScreen.storyboard in Resources */,
+				F3CD7BD822D873AF009D0191 /* Assets.xcassets in Resources */,
+				F3CD7BD622D873AE009D0191 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1419C1D2DD8C0BBA9391ED9C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmartRussianToEnglishTranslation/Pods-SmartRussianToEnglishTranslation-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmartRussianToEnglishTranslation/Pods-SmartRussianToEnglishTranslation-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SmartRussianToEnglishTranslation/Pods-SmartRussianToEnglishTranslation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3C689C50DB77C097169CB9C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmartRussianToEnglishTranslation-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F3CD7BC922D873AE009D0191 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3CD7BE322D87B75009D0191 /* ChatMessageCell.swift in Sources */,
+				F3CD7BD322D873AE009D0191 /* ViewController.swift in Sources */,
+				F3CD7BE522D87BBB009D0191 /* VoiseRecognizer.swift in Sources */,
+				F3CD7C0622D8E304009D0191 /* BANetManagerCache.m in Sources */,
+				F3CD7BEB22D87E4B009D0191 /* BottomView.swift in Sources */,
+				F3CD7C0922D8E304009D0191 /* BADataEntity.m in Sources */,
+				F3CD7C0822D8E304009D0191 /* UIImage+CompressImage.m in Sources */,
+				F3CD7BD122D873AE009D0191 /* AppDelegate.swift in Sources */,
+				F3CD7C0722D8E304009D0191 /* BANetManager.m in Sources */,
+				F3CD7C0522D8E304009D0191 /* NSData+AES.m in Sources */,
+				F3CD7C0B22D8F23F009D0191 /* AboutViewController.swift in Sources */,
+				F3CD7BE722D87C47009D0191 /* YandexClient.swift in Sources */,
+				F3CD7C0322D8E304009D0191 /* GTMBase64.m in Sources */,
+				F3CD7C0422D8E304009D0191 /* SecurityUtil.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F3CD7BD422D873AE009D0191 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3CD7BD522D873AE009D0191 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F3CD7BD922D873AF009D0191 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3CD7BDA22D873AF009D0191 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F3CD7BDD22D873AF009D0191 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F3CD7BDE22D873AF009D0191 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F3CD7BE022D873AF009D0191 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE75B4E2C9085724C665E0A5 /* Pods-SmartRussianToEnglishTranslation.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SmartRussianToEnglishTranslation/SmartRussianToEnglishTranslation.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5SWU3UWH68;
+				INFOPLIST_FILE = SmartRussianToEnglishTranslation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SmartRussianToEnglishTranslationByWinston;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PRODUCT_NAME)/Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F3CD7BE122D873AF009D0191 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 013DFB02139CF4F559DA0E83 /* Pods-SmartRussianToEnglishTranslation.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SmartRussianToEnglishTranslation/SmartRussianToEnglishTranslation.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5SWU3UWH68;
+				INFOPLIST_FILE = SmartRussianToEnglishTranslation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SmartRussianToEnglishTranslationByWinston;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PRODUCT_NAME)/Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F3CD7BC822D873AE009D0191 /* Build configuration list for PBXProject "SmartRussianToEnglishTranslation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3CD7BDD22D873AF009D0191 /* Debug */,
+				F3CD7BDE22D873AF009D0191 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3CD7BDF22D873AF009D0191 /* Build configuration list for PBXNativeTarget "SmartRussianToEnglishTranslation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3CD7BE022D873AF009D0191 /* Debug */,
+				F3CD7BE122D873AF009D0191 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F3CD7BC522D873AE009D0191 /* Project object */;
+}
